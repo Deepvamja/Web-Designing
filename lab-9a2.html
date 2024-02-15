@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		lab-9a
+	</title>
+	<style>
+		@keyframes box{
+			0%{
+				margin-left: 0px;
+				margin-top: 0px;
+			}
+			25%{
+                  margin-left: 90px;
+                  margin-top: 0px;
+			}
+			50%{
+                 margin-top: 100px;
+                 margin-left: 100px;
+			}
+			75%{
+                  margin-left: 0px;
+                  margin-top: 100px
+			}
+			100%{
+                  margin-top: 0px;
+                  margin-left: 0px;
+			}
+		}
+
+		.mydiv{
+			animation-name: box;
+			background-color: magenta;
+			animation-duration: 2s;
+			height: 100px;
+			animation-delay: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: reverse;
+			animation-timing-function: ease-in;
+			width: 80px;
+
+		}
+	</style>
+</head>
+<body>
+  <div class="mydiv"></div>
+</body>
+</html>
